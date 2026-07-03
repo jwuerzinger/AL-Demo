@@ -150,6 +150,7 @@ def main():
         ax_u.set_ylabel("GP std")
         ax_u.set_xlabel("x")
         ax_u.set_title("predictive uncertainty (acquisition)")
+        ax_u.set_ylim(0, 0.9)  # fixed so uncertainty shrinkage is visible
 
         fig.tight_layout()
         path = os.path.join(OUT_DIR, f"iter_{it:02d}.png")
