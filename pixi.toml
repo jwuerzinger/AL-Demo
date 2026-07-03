@@ -1,0 +1,17 @@
+[project]
+name = "active_learning_gp_demo"
+version = "0.1.0"
+description = "Active learning demo: GP (gpytorch, CPU) with max-uncertainty sampling"
+channels = ["conda-forge"]
+platforms = ["osx-arm64"]
+
+[tasks]
+demo = "python active_learning_demo.py"
+
+[dependencies]
+matplotlib = ">=3.11.0,<3.12"
+numpy = ">=2.4.6,<2.5"
+pytorch-cpu = ">=2.12.0,<2.13"
+imageio = ">=2.37.0,<2.38"
+python = "3.11.*"
+gpytorch = ">=1.15.2,<1.16"
